@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Repository Dispatch
-        run: npm install
+        run: echo fun
         
           
