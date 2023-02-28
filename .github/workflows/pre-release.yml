@@ -11,6 +11,9 @@ concurrency:
 jobs:
   call-cd-prod:
     uses: ./.github/workflows/backend-cd-prod.yml
+    secrets: 
+      PRUEBA: ${{ secrets.PRUEBA }}
+
 
   call-cd-stg:
     needs: call-cd-prod
