@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Second Workflow
-        uses: peter-evans/workflow-dispatch@v2
+        uses: peter-evans/repository-dispatch@v2
         with:
           workflow: Second Workflow
