@@ -1,16 +1,10 @@
 name: First Workflow
-on:
-  push:
-    branches:
-      - main
+on: workflow_call
 jobs:
   jobA:
     runs-on: ubuntu-latest
     steps:
       - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          repository: diegoRojasIoet/prueba
-          event-type: my-event
-          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+      - run: echo Second Job
+        
+          

@@ -1,12 +1,8 @@
 name: Repository Dispatch
-on:
-  repository_dispatch:
-    types: [my-event]
+on: workflow_call
 jobs:
   myEvent:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.client_payload.ref }}
-      - run: echo ${{ github.event.client_payload.sha }}
+      
+      - run: echo Second Job
