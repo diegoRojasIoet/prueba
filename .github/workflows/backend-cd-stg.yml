@@ -4,5 +4,5 @@ jobs:
   myEvent:
     runs-on: ubuntu-latest
     steps:
-      
-      - run: echo Second Job
+      - name: work2
+        run: echo Second Job
