@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Repository Dispatch
-        run: echo prueba-work 
+        run: echo ${{ secrets.PRUEBA }} 
         
           
