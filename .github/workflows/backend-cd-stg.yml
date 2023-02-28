@@ -1,13 +1,12 @@
-name: Second Workflow
+name: Repository Dispatch
 on:
   repository_dispatch:
-  types: [Second-Workflow]
+    types: [my-event]
 jobs:
-  jobB:
+  myEvent:
     runs-on: ubuntu-latest
     steps:
-      - name: Do something
       - uses: actions/checkout@v3
         with:
           ref: ${{ github.event.client_payload.ref }}
-      - run: echo "Second Workflow was triggered"
+      - run: echo ${{ github.event.client_payload.sha }}
