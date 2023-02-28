@@ -10,4 +10,4 @@ jobs:
       - name: Trigger Second Workflow
         uses: peter-evans/repository-dispatch@v2
         with:
-          workflow: Second Workflow
+          event-type: Second Workflow
