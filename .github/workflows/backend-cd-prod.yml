@@ -2,9 +2,11 @@ name: First Workflow
 on: workflow_call
 jobs:
   jobA:
+    env:
+      VARIABLE: ${{ secrets.PRUEBA }}
     runs-on: ubuntu-latest
     steps:
       - name: Repository Dispatch
-        run: echo fun
+        run: echo prueba-work 
         
           
