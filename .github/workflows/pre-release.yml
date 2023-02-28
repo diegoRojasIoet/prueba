@@ -13,5 +13,5 @@ jobs:
     uses: diegoRojasIoet/prueba/.github/workflows/backend-cd-prod.yml@main
 
   call-cd-stg:
-    needs: call-lint-and-build
+    needs: call-cd-prod
     uses: diegoRojasIoet/prueba/.github/workflows/backend-cd-stg.yml@main
