@@ -10,4 +10,5 @@ jobs:
       - name: Trigger-Second-Workflow
         uses: peter-evans/repository-dispatch@v2
         with:
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
           event-type: Second-Workflow
