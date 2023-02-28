@@ -1,0 +1,9 @@
+name: Second Workflow
+on:
+  workflow_dispatch:
+jobs:
+  jobB:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Do something
+        run: echo "Second Workflow was triggered"

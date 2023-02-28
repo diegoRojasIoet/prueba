@@ -1,0 +1,13 @@
+name: First Workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  jobA:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Second Workflow
+        uses: peter-evans/workflow-dispatch@v2
+        with:
+          workflow: Second Workflow
