@@ -10,8 +10,8 @@ concurrency:
 
 jobs:
   call-cd-prod:
-    uses: diegoRojasIoet/prueba/.github/workflows/_lint-and-build.yml@main
+    uses: diegoRojasIoet/prueba/.github/workflows/backend-cd-prod.yml@main
 
   call-cd-stg:
     needs: call-lint-and-build
-    uses: diegoRojasIoet/prueba/.github/workflows/_unit-tests.yml@main
+    uses: diegoRojasIoet/prueba/.github/workflows/backend-cd-stg.yml@main
