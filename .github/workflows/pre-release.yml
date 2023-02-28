@@ -17,3 +17,4 @@ jobs:
   call-cd-stg:
     needs: call-cd-prod
     uses: diegoRojasIoet/prueba/.github/workflows/backend-cd-stg.yml@main
+    secrets: inherit
