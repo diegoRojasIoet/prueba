@@ -7,7 +7,7 @@ jobs:
   jobA:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Second Workflow
+      - name: Trigger-Second-Workflow
         uses: peter-evans/repository-dispatch@v2
         with:
-          event-type: Second Workflow
+          event-type: Second-Workflow

@@ -1,6 +1,7 @@
 name: Second Workflow
 on:
   workflow_dispatch:
+  types: [Second-Workflow]
 jobs:
   jobB:
     runs-on: ubuntu-latest
